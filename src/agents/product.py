@@ -38,7 +38,7 @@ class Product:
             return self.parts
         return None
     
-    def search_part(self, part:Part):
+    def search_part(self, part:Part) -> Part:
         if self.parts:
             for local_part in self.parts:
                 if local_part.part_type == part.part_type:
